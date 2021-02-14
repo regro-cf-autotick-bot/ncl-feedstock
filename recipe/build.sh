@@ -15,8 +15,7 @@ if [ "$(uname)" = "Darwin" ]; then
 
     # install xquartz
     sudo mv /usr/local/conda_mangled/* /usr/local/
-    /usr/local/Homebrew/bin/brew install homebrew/cask
-    /usr/local/Homebrew/bin/brew cask install xquartz
+    /usr/local/Homebrew/bin/brew install --cask xquartz
 
     if [ -d "/opt/X11" ]; then
         x11_lib="-L/opt/X11/lib"
